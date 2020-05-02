@@ -285,7 +285,7 @@
                     <div class="aboutMeTextClass">
                         <p class="aboutProjectClass">
                             Hello! My name is Yarden.<br>
-                            I'm a current student at John Bryce, studing to become a Fullstack Web Developer.
+                            I am a Full Stack Web Developer, graduated from John Bryce.
                         </p>
                     </div>
                     <div class="aboutProjectTextClass">
