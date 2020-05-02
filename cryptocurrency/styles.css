@@ -1,0 +1,392 @@
+/* body element design: */
+body{
+    margin:auto; 
+    background-image: radial-gradient( #315392, #1b3242);
+    background-size: cover;
+}
+
+/* Parallax Scroll image design: */
+.parallax { 
+    /* The image used */
+    background-image: url("/assets/images/bitcoin-2007769_1920.jpg");
+  
+    /* Set a specific height */
+    height: 500px; 
+    width:100%;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* Parallax Scrolling - different height from screen size of 768px - 991px: */
+@media screen and (min-width: 768px) {
+    .parallax {
+        height: 900px; 
+    }
+  }
+
+  /* Parallax Scrolling - different height from screen size of 992px and higher: */
+@media screen and (min-width: 992px) {
+    .parallax {
+        height: 800px; 
+    }
+  }
+
+/* Header-Page title */
+.pageTitle{
+    height: 100px;
+    text-align: center;
+    position: relative;
+    top:50%;
+    color: rgb(253, 251, 247);
+    text-shadow: 2px 2px 5px rgb(253, 207, 0);
+    font-family: crypto;
+    font-size: 50px;
+  }
+
+  /* Page title - different font size from screen size of 767px and lower  */
+@media screen and (max-width: 767px) {
+    .pageTitle {
+        font-size: 30px;
+    }
+  }
+
+/* font for Header Page title */
+@font-face{
+    font-family: crypto;
+    src : url("/assets/fonts/toxigenesis\ bd.ttf");
+}
+
+/* Small image in the header */
+#smallImgDiv > img{
+    width:119px;
+    position:absolute;
+    right: 0;
+}
+
+/* footer element design: */
+footer{
+    color:white;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: small;
+}
+
+/* Navigation links/buttons design: Home, Live Report and About */
+#navigatorDiv >.btn{
+    border:1px solid rgb(132, 187, 231);
+    color: rgb(255, 255, 255);
+    margin:1px;
+    display:inline-block;
+    font-size: medium;
+}
+
+/* Navigator Div design: */
+#navigatorDiv{
+    display:inline-block;
+    margin-bottom: 22px;
+    padding-left: 20px;
+}
+
+/* Navbar bg color */
+.bg-light{
+    background-color: transparent!important;
+    }
+
+/* Search bar Div design:  */
+#searchBarDiv{
+    position: flex;
+    right:7px;
+    float:right;
+    margin-top: 3px;
+}
+
+/*Search button design:  */
+.searchButtonClass{
+    display: inline-block;
+    border: 1px solid cornflowerblue;
+    margin-left: 1px;
+    margin-right: 1px;
+    color: rgb(255, 255, 255);
+}
+
+/* Search button div and clear selected button design:  */
+.searchButtonClassDiv, .clearSelectedButton{
+    display: inline-block;
+}
+
+/*input search box div design: */
+#searchInputId{
+    display: inline-block;
+    height: 100%;
+}
+
+/* input -search box- design: */
+.form-control{
+    padding-top:1px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: 1px;
+    margin-right: 0;
+    height: 34px;
+    width:150px;
+    padding-right: 0;
+}
+
+/* Clear-Search button - design:  */
+#clearSearchButtonDiv{
+    display: inline-block;
+    margin-top:3px;
+}
+
+/* Home-Coin's details container div: */
+#coinsDetailsContainer{
+    display: inline-block;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
+
+/* No search result Div design: */
+#noSearchResultDiv{
+    display:inline-block;
+    text-align: center;
+    margin: auto;
+}
+
+/* No search result text design: */
+.noSearchResultClass{
+    color:white;
+}
+
+/*Live Reports container div design:  */
+#reportDetailsContainer{
+  display: block;
+}
+
+/* Chart Container design: */
+#chartContainer{
+    height: 370px;
+    max-width: 920px;
+    margin: 0px auto;
+}
+
+/* About container div design: */
+#aboutContentContainer{
+  display: inline-block;
+  position:relative;
+}
+
+/* Coin's Id from API - hidden: */
+.coinIdClass{
+    visibility: hidden;
+}
+
+/* Each card's div design: */
+.cardClass{
+    display: inline-block;
+    border: 2px solid white;
+    padding-top: 10px;
+    margin-right: 3px;
+    border-radius: 7px;
+    margin-bottom: 5px;
+    background-color: rgba(234, 245, 250, 0.137);
+}
+
+/* toggle select while turned off design: */
+.custom-control-label::before{
+    background-color: rgba(154, 156, 158, 0.534);
+    box-shadow: 2px 2px 5px  #27475e;
+}
+
+/* More Info collapser border: */
+.card-body{
+    padding: 3px;
+    display: inline-block;
+    border:2px solid rgba(241, 239, 239, 0.795);
+    background-color: rgba(245, 245, 245, 0.075);
+    color:white;
+    margin:2px;
+}
+
+/* Toggle select position */
+.custom-control{
+    display: inline-block;
+    position: absolute;
+    right:15px;
+    top:auto;
+}
+
+/* Coin's name design: */
+.card-text{
+    color: rgb(238, 237, 237);
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+
+/* Coin's symbol title design: */
+.card-title{
+    display: inline-block;
+    color: rgb(255, 243, 203);
+    text-shadow: 2px 2px 3px rgb(34, 47, 73);
+}
+
+/* More Info button design: */
+.moreInfoButton{
+    color:rgb(235, 240, 250);
+    background-color: #446fbe;
+    box-shadow: 1px 1px 3px rgb(45, 45, 73);
+    border: 1px solid  #284477;
+}
+
+/* More Info loading bar: */
+.loadingBarMoreInfo{
+    width: 30px;
+    display: none;
+    margin:auto;
+}
+
+/* More Info loading bar div- no border:  */
+.loadingBarClassborder{
+    border:none;
+}
+
+/*Large loading bar design:  */
+.loadingBarClass{
+    width: 60px;
+    display: none;
+    margin:100px auto;
+    position: absolute;
+    left: 50%;
+    z-index: 4;
+}
+
+/* Image div in the About design: */
+.aboutImageClassDiv  {
+    width: 220px;
+    height: 220px;
+    position: relative;
+    top:0;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 3px solid lightgray;
+    margin-left: 70px;
+    box-shadow: 5px 5px 30px lightslategray;
+    display: inline-block;
+    margin-bottom: 60px;
+    right:20px;
+    margin-top: 50px;
+}
+
+/* Image div in the about design - different position from screen size of 768px to 991px: */
+@media screen and (min-width: 768px) {
+    .aboutImageClassDiv {
+        top:-160px;
+    }
+  }
+
+  /* Image div in the about design - different position from screen size of 992px and higher: */
+@media screen and (min-width: 992px) {
+    .aboutImageClassDiv {
+        top:-50px;
+    }
+  }
+  
+  /* Image in the About design: */
+.aboutImageClass {
+  margin: 0 auto;
+  margin-left: -45%;
+  height: 100%;
+  width: auto;
+  display: inline-block;
+}
+
+/* About - text div design: */
+.aboutTextClass{
+    display: inline-block;
+    width: 92%;
+    padding-left: 30px;
+    margin-bottom: 30px;
+}
+
+/*About - text paragraph design: */
+.aboutProjectClass{
+    color:white;
+}
+
+/* Each card in the modal design: */
+.modalOptionDiv{
+    border:1px  solid rgb(194, 188, 188);
+    margin:10px 0;
+    padding:2px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 5px rgb(24, 55, 90);
+    background-color: #4168b1;
+}
+
+/*Each card's title and symbol position and design within the modal:  */
+.modalOptionSymbol, .modalOptionName{
+    display: inline-block;
+    padding-left:5px;
+    padding-top: 5px;
+}
+
+/* Each card's toggle position and design within the modal: */
+.modalOptionToggle{
+    display: inline-block;
+    position: absolute;
+    right: 30px;
+    padding-top: 7px;
+}
+
+/* Modal's header div design: */
+.modal-header{
+    background-image: radial-gradient(#6f85ad, #2e536d);
+    border-top:1px solid white;  
+    border-right:1px solid white;  
+    border-left:1px solid white; 
+    font-size: 14px;
+    color:white;
+}
+
+/* Modal's footer div design: */
+.modal-footer{
+    background-image: radial-gradient(#7c91b8, #2e536d);
+    border-bottom:1px solid white;  
+    border-right:1px solid white;  
+    border-left:1px solid white;   
+}
+
+/* Modal's body div design: */
+.modal-body{
+    background-image: radial-gradient(#3b61a7, #243b4d);
+    border-right:1px solid white;  
+    border-left:1px solid white;  
+}
+
+/* Modal's "x" button design: */
+.close{
+    color:white;
+    text-shadow: 1px 1px 2px rgb(64, 99, 102);
+}
+
+/* Modal's "save changes" button design: */
+.saveButton{
+    color:rgb(235, 240, 250);
+    background-color: #315392;
+    box-shadow: 1px 1px 3px rgb(45, 45, 73);
+    border: 1px solid  #284477;
+}
+
+/* Modal's "close" button design: */
+.closeButton{
+    box-shadow: 1px 1px 3px rgb(45, 45, 73);
+    border: 1px solid rgb(173, 173, 173); 
+}
+
+

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cryptocurrency Website</title>
+    <link rel="shortcut icon" type="image/png" href="/assets/icons/Coins3.ico" /> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="jquery-3.4.1.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section id="sectionId"></section>
+    <div class="container-fluid">
+        <div id="parallaxId" class="parallax"></div>
+        <header class="row">
+            <div class="col-12 pageTitle">Cryptocurrency</div>
+            <div id="smallImgDiv" ><img src="/assets/images/small_image_05.png" class="col d-none d-md-block"/></div>
+        </header>
+        <nav class="navbar navbar-light bg-light row">
+          <!-- Navigator: -->
+          <div id="navigatorDiv" class="col-12 col-md-6 ">
+            <a href="javascript:void(0)" id="coinsContainer" class="navbar-brand btn btn-sm">Home </a>
+            <a href="javascript:void(0)" id="reportsContainer" class="navbar-brand btn btn-sm">Live Reports </a>
+            <a href="javascript:void(0)" id="aboutContainer" class="navbar-brand btn btn-sm">About </a>
+          </div>
+            <!--Search Bar:  -->
+          <div id="searchBarDiv"  class="col-12 col-md-6 text-right">
+              <div>
+                <div id="searchInputId">
+                  <input id="searchBoxId" class="form-control mr-sm-2" type="search" placeholder="Search"aria-label="Search">    
+                </div>
+                <div id="searchButtonId" class="searchButtonClassDiv">
+                  <button id="searchButton" type="button" class="btn btn-sm searchButtonClass">Search</button>  
+                  <button id="clearSelectedButton" type="button" class="btn btn-sm searchButtonClass clearSelectedButton">Clear Selected</button>
+                </div>
+                <div>
+                    <div id="clearSearchButtonDiv"></div>
+                </div>
+            </div>
+          </div>
+        </nav>
+        <!-- Main page -->
+        <main>
+            <div class="row">
+                <div id="coinsDetailsContainer">
+                  <img class="loadingBarClass" src="/assets/images/loading2.gif" id="loadingBarHomeId">
+                </div>
+                <div id="noSearchResultDiv"></div>
+                <div id="reportDetailsContainer"></div>
+                <div id="aboutContentContainer"></div>
+            </div>
+        </main>
+    </div>
+        <!-- Chart div -->
+    <div id="chartContainer"></div>
+    
+   <footer>All Rights Reserved - Yarden Mor &copy;</footer>
+
+    <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script> 
+    <script src="main.js"></script>
+</body>
+
+</html>
